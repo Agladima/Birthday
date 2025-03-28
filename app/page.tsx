@@ -24,7 +24,7 @@ export default function Home() {
       speed: 5 + Math.random() * 10,
       size: 0.5 + Math.random() * 0.7,
       color: `hsl(${Math.random() * 360}, 70%, 70%)`,
-      start: Math.random() * 100 - 100, // Random starting position (above viewport)
+      start: Math.random() * 100 - 100,
     }));
     setBalloons(initialBalloons);
   }, []);
@@ -34,7 +34,6 @@ export default function Home() {
       setPoppedBalloons([...poppedBalloons, id]);
       setTimeout(() => {
         setPoppedBalloons(poppedBalloons.filter((i) => i !== id));
-        // Reset balloon position after pop animation
         setBalloons((prev) =>
           prev.map((b) =>
             b.id === id
@@ -86,7 +85,7 @@ export default function Home() {
             For My Amazing Best Friend
           </h1>
           <p className="text-lg text-purple-700">
-            You're the best thing that ever happened to me
+            You&apos;re the best thing that ever happened to me
           </p>
         </header>
 
@@ -126,21 +125,21 @@ export default function Home() {
           {/* Letter Section */}
           <section className="bg-white p-8 rounded-xl shadow-md mb-12">
             <h2 className="text-2xl font-bold text-purple-800 mb-4">
-              Dear Nigro,
+              Dear Best Friend,
             </h2>
             <p className="text-gray-700 mb-4">
               I wanted to create this little space to remind you how much you
               mean to me. Through all the laughter, the tears, and the countless
-              memories we've shared, you've been my rock, my partner in crime,
-              and my favorite person.
+              memories we&apos;ve shared, you&apos;ve been my rock, my partner
+              in crime, and my favorite person.
             </p>
             <p className="text-gray-700 mb-4">
-              Remember when we stayed together? That's just one of the million
-              reasons why I'm so grateful to have you in my life.
+              Remember when we stayed together? That&apos;s just one of the
+              million reasons why I&apos;m so grateful to have you in my life.
             </p>
             <p className="text-gray-700">
-              No matter where life takes us, I'll always be here for you - just
-              like you've always been there for me.
+              No matter where life takes us, I&apos;ll always be here for you -
+              just like you&apos;ve always been there for me.
             </p>
           </section>
 
@@ -160,7 +159,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="text-center py-8 text-purple-700">
-          <p>Made with ♥ for the world's best friend</p>
+          <p>Made with ♥ for the world&apos;s best friend</p>
           <p className="mt-2 text-sm">Forever grateful for you</p>
         </footer>
       </div>
